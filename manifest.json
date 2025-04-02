@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Open Similar Links",
+  "version": "1.0",
+  "description": "Mở tất cả các link tương tự trong tab mới",
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "64": "images/icon64.png"
+    }
+  },
+  "icons": {
+    "64": "images/icon64.png"
+  }
+} 
